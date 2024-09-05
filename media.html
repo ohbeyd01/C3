@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Top Navbar */
+.top-navbar {
+    background-color: #2c3e50;
+    padding: 10px;
+    text-align: center;
+}
+
+.top-navbar ul {
+    list-style: none;
+}
+
+.top-navbar ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.top-navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.top-navbar ul li a:hover {
+    color: #f39c12;
+}
+
+/* Main Navbar */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar li a:hover {
+    color: #f39c12;
+}
+
+.btn-primary {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+form label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #e67e22;
+}
+
+/* Event/News List */
+.event-list, .news-list, .media-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-item, .news-item, .media-item {
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+}
+
+footer ul li a img {
+    width: 20px;
+    height: 20px;
+}
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+        <ul class="top-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="join-church.html">Join The Church</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Header Section -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">C3</div>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="btn-primary">Live Prayer</button>
+        </nav>
+    </header>
+
+    <!-- Media Section -->
+    <section id="media" class="content-section">
+        <h1>Church Media</h1>
+        <p>Watch and listen to our latest sermons, podcasts, and video content. Explore below!</p>
+
+        <!-- Media Content -->
+        <div class="media-list">
+            <div class="media-item">
+                <h3>Latest Sermon: "Walking in Faith"</h3>
+                <p>Watch the video or listen to the audio version of our most recent sermon.</p>
+                <!-- Add video/audio links here -->
+            </div>
+            <div class="media-item">
+                <h3>Podcast: "Faith and Family"</h3>
+                <p>Listen to our latest podcast episode discussing how faith strengthens family bonds.</p>
+                <!-- Add podcast link here -->
+            </div>
+            <!-- Add more media items as needed -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Designed by JACQUES &copy; 2024 Campus Club Church. All rights reserved.</p>
+        <ul class="social-icons">
+            <li><a href="#"><img src="icon-facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="icon-twitter.png" alt="Twitter"></a></li>
+            <li><a href="#"><img src="icon-instagram.png" alt="Instagram"></a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
